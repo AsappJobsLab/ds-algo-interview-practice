@@ -1,5 +1,10 @@
 /*
+calculate average of an array elements (positive integer)?
+input: [1, 4, 5, 1, 6]
+output: 3.4
 
+input: [4, 4, 5, 1, 6]
+output: 5
  */
 
 import java.util.Arrays;
@@ -11,16 +16,17 @@ public class CalculateAverage {
     }
 
     /**
-     Time Complexity: O(n)
-     Space complexity: O(n)
+     Time Complexity:
+     Space complexity:
      */
-    public static int calculateAverage(int[] ar){
-        int arSize = ar.length;
-        int avg = 0;
-        for(int i=0; i<arSize-1; i+=2){
-            avg = avg + ar[i] - (ar[i] - ar[i+1])/2;
-        }
-        return avg;
-    }
 
+    public static double calculateAverage(int[] ar){
+        int arSize = ar.length;
+        double sum = 0.0;
+        for(int i=0; i< arSize; i++){
+            sum = sum + ar[i]/arSize;
+        }
+
+        return sum;
+    }
 }
