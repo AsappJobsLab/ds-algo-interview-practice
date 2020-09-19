@@ -16,8 +16,8 @@ public class CalculateAverage {
     }
 
     /**
-     Time Complexity:
-     Space complexity:
+     Time Complexity: O(n)
+     Space complexity: O(1)
      */
 
     public static double calculateAverage(int[] ar){
